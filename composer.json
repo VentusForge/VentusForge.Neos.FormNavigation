@@ -1,0 +1,20 @@
+{
+    "name": "ventusforge/neos-form-navigation",
+    "license": "GPL-3.0-or-later",
+    "type": "neos-plugin",
+    "description": "Adds navigation elements to Neos Form",
+    "version": "0.0.1",
+    "require": {
+        "php": ">=8.3",
+        "neos/neos": ">=8.0",
+        "neos/form": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "VentusForge\\Neos\\FormNavigation\\": "Classes"
+        }
+    },
+    "suggest": {
+        "neos/form-builder": "Form Builder for Neos CMS"
+    }
+}

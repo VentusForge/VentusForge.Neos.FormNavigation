@@ -1,0 +1,3 @@
+prototype(VentusForge.Neos.FormNavigation:NextPage.Definition) < prototype(Neos.Form.Builder:FormElement.Definition) {
+    formElementType = 'VentusForge.Neos.FormNavigation:NextPage'
+}

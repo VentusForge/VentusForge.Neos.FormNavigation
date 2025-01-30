@@ -1,0 +1,9 @@
+Neos:
+  Neos:
+    Ui:
+      frontendConfiguration:
+        'Neos.Form.Builder:PlaceholderInsert':
+          # ignore node types in dropdown
+          ignoreNodeTypeInDropdown:
+            'VentusForge.Neos.FormNavigation:NextPage': false
+            'VentusForge.Neos.FormNavigation:PreviousPage': false

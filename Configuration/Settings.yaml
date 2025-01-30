@@ -1,0 +1,47 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'VentusForge.Neos.FormNavigation': true
+    userInterface:
+      translation:
+        autoInclude:
+          'VentusForge.Neos.FormNavigation':
+            - 'NodeTypes/*'
+
+  Form:
+    presets:
+      default:
+        formElementTypes:
+          'VentusForge.Neos.FormNavigation:NextPage':
+            implementationClassName: VentusForge\Neos\FormNavigation\Form\FormElements\NextPage
+            superTypes:
+              'Neos.Form:FormElement': true
+            renderingOptions:
+              skipLabel: true
+              templatePathPattern: 'resource://VentusForge.Neos.FormNavigation/Private/Form/default/NextPage.html'
+              btnClasses: ''
+              translationPackage: 'VentusForge.Neos.FormNavigation'
+              translationSource: 'Templates/NextPage'
+              translationIdNextPage: 'renderer.label.next'
+              translationIdSubmitForm: 'renderer.label.submit'
+          'VentusForge.Neos.FormNavigation:PreviousPage':
+            implementationClassName: VentusForge\Neos\FormNavigation\Form\FormElements\PreviousPage
+            superTypes:
+              'Neos.Form:FormElement': true
+            renderingOptions:
+              skipLabel: true
+              templatePathPattern: 'resource://VentusForge.Neos.FormNavigation/Private/Form/default/PreviousPage.html'
+              btnClasses: ''
+              translationPackage: 'VentusForge.Neos.FormNavigation'
+              translationSource: 'Templates/PreviousPage'
+              translationId: 'renderer.label'
+      bootstrap5:
+        formElementTypes:
+          'VentusForge.Neos.FormNavigation:NextPage':
+            renderingOptions:
+              containerClassAttribute: 'd-flex justify-content-end'
+              btnClasses: 'btn btn-primary'
+          'VentusForge.Neos.FormNavigation:PreviousPage':
+            renderingOptions:
+              btnClasses: 'btn btn-primary'

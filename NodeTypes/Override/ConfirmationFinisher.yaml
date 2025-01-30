@@ -1,0 +1,9 @@
+'Neos.Form.Builder:ConfirmationFinisher':
+  properties:
+    message:
+      ui:
+        inspector:
+          editorOptions:
+            nodeTypes:
+              'VentusForge.Neos.FormNavigation:NextPage': false
+              'VentusForge.Neos.FormNavigation:PreviousPage': false

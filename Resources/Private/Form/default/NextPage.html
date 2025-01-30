@@ -1,0 +1,47 @@
+<f:layout name="Neos.Form:Field" />
+<f:section name="field">
+    <div class="{element.renderingOptions.containerClassAttribute}">
+        <f:if condition="{element.renderingOptions.__navigation_nextPageExists}">
+            <f:then>
+                <f:form.button
+                    name="__currentPage"
+                    value="{element.renderingOptions.__navigation_nextPageIndex}"
+                    class="{element.renderingOptions.btnClasses}"
+                >
+                    <f:if condition="{element.properties.text} != ''">
+                        <f:then>
+                            {element.properties.text} Custom
+                        </f:then>
+                        <f:else>
+                            <f:translate
+                                id="{element.renderingOptions.translationIdNextPage}"
+                                source="{element.renderingOptions.translationSource}"
+                                package="{element.renderingOptions.translationPackage}"
+                            />
+                        </f:else>
+                    </f:if>
+                </f:form.button>
+            </f:then>
+            <f:else>
+                <f:form.button
+                    name="__currentPage"
+                    value="{element.renderingOptions.__formPageCounter}"
+                    class="{element.renderingOptions.btnClasses}"
+                >
+                    <f:if condition="{element.properties.text} != ''">
+                        <f:then>
+                            {element.properties.text}
+                        </f:then>
+                        <f:else>
+                            <f:translate
+                                id="{element.renderingOptions.translationIdSubmitForm}"
+                                source="{element.renderingOptions.translationSource}"
+                                package="{element.renderingOptions.translationPackage}"
+                            />
+                        </f:else>
+                    </f:if>
+                </f:form.button>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>

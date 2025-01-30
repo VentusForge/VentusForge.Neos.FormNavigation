@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file original="" product-name="VentusForge.Neos.FormNavigation" source-language="en" datatype="plaintext" target-language="de">
+        <body>
+            <trans-unit id="renderer.label.next" xml:space="preserve" approved="yes">
+                <source>Next-Page</source>
+                <target xml:lang="de">Nächste Seite</target>
+            </trans-unit>
+             <trans-unit id="renderer.label.submit" xml:space="preserve" approved="yes">
+                 <source>Submit</source>
+                 <target xml:lang="de">Absenden</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

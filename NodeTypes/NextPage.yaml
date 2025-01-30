@@ -1,0 +1,31 @@
+'VentusForge.Neos.FormNavigation:NextPage':
+  superTypes:
+    'Neos.Form.Builder:FormElement': true
+    'Neos.Form.Builder:IdentifierMixin': false
+    'Neos.Form.Builder:DefaultValueMixin': false
+    'Neos.Form.Builder:RequiredCheckboxMixin': false
+    'Neos.Form.Builder:ValidatorsMixin': false
+    'Neos.Form.Builder:LabelMixin': false
+  ui:
+    label: i18n
+    icon: fas fa-angle-double-right
+    group: 'form.navigation'
+    position: 20
+    inspector:
+      groups:
+        formElement:
+          icon: icon-gavel
+  properties:
+    label:
+      type: string
+      defaultValue: 'Next/Submit-Button'
+      ui:
+        reloadIfChanged: true
+    text:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: formElement

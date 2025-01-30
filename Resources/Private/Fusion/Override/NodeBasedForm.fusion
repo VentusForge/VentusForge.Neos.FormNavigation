@@ -1,0 +1,6 @@
+prototype(Neos.Form.Builder:Form) {
+    renderingOptions {
+        showNavigation = ${q(node).property('showNavigation') || true}
+        showNavigation.@if.isOfType = ${q(node).is('[instanceof VentusForge.Neos.FormNavigation:Mixin.HideNavigation]')}
+    }
+}
