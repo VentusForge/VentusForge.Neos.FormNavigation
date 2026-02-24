@@ -5,6 +5,10 @@
             <trans-unit id="ui.label" xml:space="preserve" approved="yes">
                 <source>Prevoius Page-Button</source>
             </trans-unit>
+
+            <trans-unit id="properties.text" xml:space="preserve" approved="yes">
+                <source>Override Label</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

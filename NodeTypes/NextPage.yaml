@@ -1,4 +1,5 @@
 'VentusForge.Neos.FormNavigation:NextPage':
+  label: "${Neos.Node.labelForNode(node).properties('title', 'text')}"
   superTypes:
     'Neos.Form.Builder:FormElement': true
     'Neos.Form.Builder:IdentifierMixin': false
@@ -10,17 +11,12 @@
     label: i18n
     icon: fas fa-angle-double-right
     group: 'form.navigation'
-    position: 20
+    position: 1010
     inspector:
       groups:
         formElement:
-          icon: icon-gavel
+          icon: 'fas fa-cog'
   properties:
-    label:
-      type: string
-      defaultValue: 'Next/Submit-Button'
-      ui:
-        reloadIfChanged: true
     text:
       type: string
       defaultValue: ''
