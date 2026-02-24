@@ -6,6 +6,11 @@
                 <source>Next-Page / Submit-Button</source>
                 <target xml:lang="de">Nächste Seite / Absenden-Button</target>
             </trans-unit>
+
+            <trans-unit id="properties.text" xml:space="preserve" approved="yes">
+                <source>Override Label</source>
+                <target xml:lang="de">Label überschreiben</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
